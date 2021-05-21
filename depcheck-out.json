@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "serverless",
+    "serverless-prune-plugin",
+    "serverless-webpack"
+  ],
+  "devDependencies": [
+    "depcheck"
+  ],
+  "missing": {},
+  "using": {},
+  "invalidFiles": {
+    "/Users/stuart.baker1/Projects/depcheck-serverless-repro/serverless.yml": "YAMLException: unknown tag !<!Ref> at line 23, column 26:\n          Value: !Ref myTopic\n                             ^\n    at generateError (/Users/stuart.baker1/Projects/depcheck-serverless-repro/node_modules/js-yaml/lib/js-yaml/loader.js:167:10)\n    at throwError (/Users/stuart.baker1/Projects/depcheck-serverless-repro/node_modules/js-yaml/lib/js-yaml/loader.js:173:9)\n    at composeNode (/Users/stuart.baker1/Projects/depcheck-serverless-repro/node_modules/js-yaml/lib/js-yaml/loader.js:1434:7)\n    at readBlockMapping (/Users/stuart.baker1/Projects/depcheck-serverless-repro/node_modules/js-yaml/lib/js-yaml/loader.js:1089:11)\n    at composeNode (/Users/stuart.baker1/Projects/depcheck-serverless-repro/node_modules/js-yaml/lib/js-yaml/loader.js:1359:12)\n    at readBlockMapping (/Users/stuart.baker1/Projects/depcheck-serverless-repro/node_modules/js-yaml/lib/js-yaml/loader.js:1089:11)\n    at composeNode (/Users/stuart.baker1/Projects/depcheck-serverless-repro/node_modules/js-yaml/lib/js-yaml/loader.js:1359:12)\n    at readBlockMapping (/Users/stuart.baker1/Projects/depcheck-serverless-repro/node_modules/js-yaml/lib/js-yaml/loader.js:1089:11)\n    at composeNode (/Users/stuart.baker1/Projects/depcheck-serverless-repro/node_modules/js-yaml/lib/js-yaml/loader.js:1359:12)\n    at readBlockMapping (/Users/stuart.baker1/Projects/depcheck-serverless-repro/node_modules/js-yaml/lib/js-yaml/loader.js:1089:11)"
+  },
+  "invalidDirs": {}
+}

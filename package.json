@@ -1,0 +1,21 @@
+{
+  "name": "depcheck-serverless-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sls": "sls package --stage test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serverless": "^2.43.0",
+    "serverless-prune-plugin": "^1.5.0",
+    "serverless-webpack": "^5.5.0"
+  },
+  "devDependencies": {
+    "depcheck": "^1.4.1"
+  }
+}

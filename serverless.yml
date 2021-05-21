@@ -1,0 +1,28 @@
+service: Foo
+
+plugins:
+  - serverless-prune-plugin
+
+custom:
+  prune:
+    automatic: true
+    number: 3
+
+provider: aws
+
+functions:
+  bar:
+    handler: index.default
+    environment:
+      TOPIC_ARN: ${cf:Foo-${opt:stage, ''}.myTopicARN}
+
+resources:
+  Outputs:
+    myTopicARN:
+      Description: 'Arn for my SNS Topic'
+      Value: !Ref myTopic
+  Resources:
+    myTopic:
+      Type: AWS::SNS::Topic
+      Properties:
+        TopicName: myFooTopic
